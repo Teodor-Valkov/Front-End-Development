@@ -1,22 +1,97 @@
-#navbar ul {
-  padding: 2em;
+@import url('reset.css');
+@import url('typography.css');
+
+.site-header .wrapper {
+  margin: 0 auto;
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(50, 50, 50);
+}
+
+.site-header .wrapper a {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+nav.navigation ul {
+  margin: 0;
+  padding: 0.rem;
+}
+
+nav.navigation ul li {
+  display: block;
   list-style: none;
 }
 
-#navbar ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 2em;
+nav.navigation ul li {
+  padding-right: 0.5rem;
 }
 
-#navbar ul li a {
+nav.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  color: blueviolet;
-  font-size: 1em;
+  color: #333;
 }
 
-#navbar ul li a:hover {
-  color: brown;
+nav.navigation ul li a:hover, nav.navigation ul li:hover>a {
+	color: navajowhite;
+}
+
+#navigation-toggle, #toggle {
+  display: none;
+}
+
+#toggle {
+  position: relative;
+  flex: 1 0 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem 0;
+  color: gainsboro;
+}
+
+#toggle i.fas {
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
+#toggle i.fa-times {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #toggle {
+    display: flex;
+    flex: 0 0 auto;
+  }
+  nav.navigation {
+    display: none;
+    border-top: 2px solid #000;
+  }
+  #navigation-toggle:checked+header nav.navigation {
+    display: block;
+    flex: 1 0 100%;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  #navigation-toggle:checked+header #toggle i.fa-bars {
+    display: none;
+  }
+  #navigation-toggle:checked+header #toggle i.fa-times {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  nav.navigation ul {
+    display: flex;
+  }
+  nav.navigation ul li:hover ul {
+    display: block;
+  }
 }

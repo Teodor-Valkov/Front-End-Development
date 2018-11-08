@@ -1,20 +1,47 @@
 let controller = (() => {
-  function first() {
+  function home() {
     this.loadPartials(
-        getPartials('first.hbs')
-      )
-      .then(function () {
-        this.partial('./templates/main.hbs');
-      });
+      getPartials('home.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
+  }
+  
+  function menu() {
+    this.loadPartials(
+      getPartials('menu.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
   }
 
-  function second() {
+  function services() {
     this.loadPartials(
-        getPartials('second.hbs')
-      )
-      .then(function () {
-        this.partial('./templates/main.hbs');
-      });
+      getPartials('services.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
+  }
+  
+  function about() {
+    this.loadPartials(
+      getPartials('about.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
+  }
+
+  function contact() {
+    this.loadPartials(
+      getPartials('contact.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
   }
 
   function getPartials(handlebarTemplatePage) {
@@ -26,7 +53,10 @@ let controller = (() => {
   }
 
   return {
-    first,
-    second
+    home,
+    menu,
+    services,
+    about,
+    contact
   };
 })()
