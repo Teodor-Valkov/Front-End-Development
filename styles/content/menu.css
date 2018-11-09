@@ -1,0 +1,62 @@
+.menu {
+    background-image: url('../../images/background-black.jpg');
+    text-align: center;
+}
+
+.menu .wrapper {
+    padding: 2rem;
+}
+
+.menu .heading {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.menu .heading h2 {
+    color: navajowhite;
+    font-size: 3rem;
+}
+
+.menu .heading p {
+    color: gainsboro;
+}
+
+.menu .menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu .menu-items article {
+    width: 20%;
+    margin: 0 1rem 5rem 1rem;
+    border: 1px solid peru;
+}
+
+.menu .menu-items article a {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.menu .menu-items article:hover {
+    border: 1px solid navajowhite;
+}
+
+.menu .menu-items article img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.menu .menu-items article h3 {
+    padding-top: 2rem;
+    color: navajowhite;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.menu .people img {
+    width: 100%;
+    padding: 0;
+    opacity: 0.8;
+}

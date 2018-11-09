@@ -1,0 +1,41 @@
+.why-us {
+    background-image: url('../../images/food.png');
+    text-align: center;
+    padding: 2rem;
+}
+
+.why-us .heading {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.why-us .heading h2 {
+    font-size: 3rem;
+}
+
+.why-us .why-us-items {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.why-us .why-us-items article {
+    margin: 1rem 3rem;
+    width: 20%;
+    text-align: center;
+}
+
+.why-us .why-us-items article i {
+    font-size: 3rem;
+}
+
+.why-us .why-us-items article h3 {
+    font-size: 1.5rem;
+}
+
+.why-us .why-us-items article p {
+    font-size: 0.9rem;
+}

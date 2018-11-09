@@ -1,7 +1,7 @@
 let controller = (() => {
   function home() {
     this.loadPartials(
-      getPartials('home.hbs')
+      getPartials('content/home.hbs')
     )
     .then(function () {
       this.partial('./templates/main.hbs');
@@ -10,34 +10,70 @@ let controller = (() => {
   
   function menu() {
     this.loadPartials(
-      getPartials('menu.hbs')
+      getPartials('content/menu.hbs')
     )
     .then(function () {
       this.partial('./templates/main.hbs');
     });
   }
 
-  function services() {
+  function reserve() {
     this.loadPartials(
-      getPartials('services.hbs')
+      getPartials('content/reserve.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
+  }
+
+  function whyUs() {
+    this.loadPartials(
+      getPartials('content/why-us.hbs')
     )
     .then(function () {
       this.partial('./templates/main.hbs');
     });
   }
   
-  function about() {
+  function aboutUs() {
     this.loadPartials(
-      getPartials('about.hbs')
+      getPartials('content/about-us.hbs')
     )
     .then(function () {
       this.partial('./templates/main.hbs');
     });
   }
 
-  function contact() {
+  function pizza() {
     this.loadPartials(
-      getPartials('contact.hbs')
+      getPartials('menu/pizza.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
+  }
+
+  function pastaRisotto() {
+    this.loadPartials(
+      getPartials('menu/pasta-risotto.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
+  }
+
+  function desserts() {
+    this.loadPartials(
+      getPartials('menu/desserts.hbs')
+    )
+    .then(function () {
+      this.partial('./templates/main.hbs');
+    });
+  }
+
+  function drinks() {
+    this.loadPartials(
+      getPartials('menu/drinks.hbs')
     )
     .then(function () {
       this.partial('./templates/main.hbs');
@@ -46,17 +82,21 @@ let controller = (() => {
 
   function getPartials(handlebarTemplatePage) {
     return {
-      header: './templates/header.hbs',
+      header: './pages/common/header.hbs',
       page: './pages/' + handlebarTemplatePage,
-      footer: './templates/footer.hbs'
+      footer: './pages/common/footer.hbs'
     }
   }
 
   return {
     home,
     menu,
-    services,
-    about,
-    contact
+    reserve,
+    whyUs,
+    aboutUs,
+    pizza,
+    pastaRisotto,
+    desserts,
+    drinks
   };
 })()
