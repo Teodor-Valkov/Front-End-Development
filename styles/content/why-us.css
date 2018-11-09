@@ -1,11 +1,5 @@
-    background-image: url('../images/food.jpg');
-<<<<<<< .mine
 .why-us {
     background-image: url('../../images/food.jpg');
-=======
-.why-us {
-    background-image: url('../../images/food.png');
->>>>>>> .theirs
     text-align: center;
     padding: 2rem;
 }

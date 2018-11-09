@@ -1,11 +1,5 @@
-    background-image: url('../images/map.jpg');
-<<<<<<< .mine
 .reserve {
     background-image: url('../../images/map.jpg');
-=======
-.reserve {
-    background-image: url('../../images/world.png');
->>>>>>> .theirs
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
