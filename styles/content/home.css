@@ -1,5 +1,10 @@
 .home-header {
+    background-image: url('../images/background-main.jpg');
+<<<<<<< .mine
     background-image: url('../../images/background-main.jpg');
+=======
+    background-image: url('../../images/background.jpg');
+>>>>>>> .theirs
     background-repeat: no-repeat;
     background-position: center;
     padding: 2rem;
