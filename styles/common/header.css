@@ -1,0 +1,102 @@
+@import url('reset.css');
+@import url('typography.css');
+header {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(50, 50, 50);
+}
+
+header a {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+header a:hover {
+  color: navajowhite;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+header nav ul li {
+  display: block;
+  list-style: none;
+}
+
+header nav ul li {
+  padding-right: 2rem;
+}
+
+header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: gainsboro;
+}
+
+header nav ul li a:hover {
+  color: navajowhite;
+}
+
+#nav-toggle, #toggle {
+  display: none;
+}
+
+#toggle {
+  position: relative;
+  flex: 1 0 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem 0;
+  color: gainsboro;
+}
+
+#toggle i.fas {
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
+#toggle i.fa-times {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #toggle {
+    display: flex;
+    flex: 0 0 auto;
+  }
+  header nav {
+    display: none;
+    border-top: 2px solid #000;
+  }
+  header nav ul li {
+    margin-top: 1rem;
+  }
+  #nav-toggle:checked+header nav {
+    display: block;
+    flex: 1 0 100%;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  #nav-toggle:checked+header #toggle i.fa-bars {
+    display: none;
+  }
+  #nav-toggle:checked+header #toggle i.fa-times {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li:hover ul {
+    display: block;
+  }
+}

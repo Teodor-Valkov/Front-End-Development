@@ -1,0 +1,64 @@
+.pasta-risotto {
+    background-image: url('../../images/background-black.jpg');
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.pasta-risotto .heading {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.pasta-risotto .heading h2 {
+    color: navajowhite;
+    font-size: 3rem;
+}
+
+.pasta-risotto .heading p {
+    color: gainsboro;
+}
+
+.pasta-risotto .pasta-risotto-items {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pasta-risotto .pasta-risotto-items article {
+    width: 20%;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid peru;
+}
+
+.pasta-risotto .pasta-risotto-items article:hover {
+    border: 1px solid navajowhite;
+}
+
+.pasta-risotto .pasta-risotto-items article img {
+    width: 80%;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid peru;
+}
+
+.pasta-risotto .pasta-risotto-items article h3 {
+    padding-top: 1rem;
+    color: navajowhite;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.pasta-risotto .pasta-risotto-items article p {
+    color: gray;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+.pasta-risotto .pasta-risotto-items article p.price {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    color: peru;
+    font-weight: 700;
+}

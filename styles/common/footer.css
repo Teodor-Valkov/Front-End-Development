@@ -1,0 +1,100 @@
+@media screen and (min-width: 1020px) {
+	.site-footer .wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+
+footer {
+	background-color: rgb(50, 50, 50);
+	color: gainsboro;
+	display: flex;
+	justify-content: space-around;
+	align-items: top;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+footer ul {
+	padding: 0;
+	margin: 0;
+}
+
+footer ul li {
+	display: block;
+	margin: 0.5rem;
+	list-style: none;
+}
+
+footer p {
+	padding-bottom: 0.5rem;
+	font-weight: 700;
+	text-transform: uppercase
+}
+
+footer .contacts ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+footer .contacts ul li i {
+	margin-right: 0.5rem;
+}
+
+
+footer .subscribe p {
+	text-align: center;
+}
+
+
+footer .subscribe form input {
+	display: block;
+	padding: 0.6rem;
+	width: 100%;
+	margin-top: 0.5rem;
+	border: none;
+	outline: none;
+	font-size: 0.8rem;
+	color: gray;
+	border-radius: 0.3rem;
+	border-bottom: 1px solid gainsboro;
+}
+
+footer .subscribe form input[type=submit] {
+	width: 30%;
+	margin-top: 1rem;
+	cursor: pointer;
+	background-color: navajowhite;
+	border: 2px solid navajowhite;
+	color: black;
+}
+
+footer .subscribe form input[type=submit]:hover {
+	background-color: black;
+	color: navajowhite;
+}
+
+footer .follow {
+	text-align: center;
+}
+
+footer .follow ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .follow ul li i {
+	position: relative;
+	top: 0.3rem;
+	font-size: 1.5rem;
+	color: gainsboro;
+	display: inline-block;
+}
+
+footer .follow ul li i:hover {
+	color: navajowhite;
+}

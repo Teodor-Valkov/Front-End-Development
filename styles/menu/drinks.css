@@ -1,0 +1,64 @@
+.drinks {
+    background-image: url('../../images/background-black.jpg');
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.drinks .heading {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.drinks .heading h2 {
+    color: navajowhite;
+    font-size: 3rem;
+}
+
+.drinks .heading p {
+    color: gainsboro;
+}
+
+.drinks .drinks-items {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.drinks .drinks-items article {
+    width: 20%;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid peru;
+}
+
+.drinks .drinks-items article:hover {
+    border: 1px solid navajowhite;
+}
+
+.drinks .drinks-items article img {
+    width: 80%;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid peru;
+}
+
+.drinks .drinks-items article h3 {
+    padding-top: 1rem;
+    color: navajowhite;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.drinks .drinks-items article p {
+    color: gray;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+.drinks .drinks-items article p.price {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    color: peru;
+    font-weight: 700;
+}

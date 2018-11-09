@@ -1,0 +1,106 @@
+.about-us {
+    background-image: url('../../images/background-black.jpg');
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.about-us .heading {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.about-us .heading h2 {
+    color: navajowhite;
+    font-size: 3rem;
+}
+
+.about-us .heading p {
+    color: gainsboro;
+}
+
+.about-us .about-us-items {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us .about-us-items article {
+    width: 50%;
+}
+
+.about-us .about-us-items .about-us-img {
+    background: url('../../images/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-us .about-us-items .story {
+    padding: 2rem;
+}
+
+.about-us .about-us-items .story h3 {
+    color: navajowhite;
+}
+
+.about-us .about-us-items .story p {
+    color: gainsboro;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-us .chefs {
+    margin-bottom: 2rem;
+}
+
+.about-us .chefs-items {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us .chefs h3 {
+    color: navajowhite;
+}
+
+.about-us .chefs p {
+    color: gainsboro;
+}
+
+.about-us .chefs-items article {
+    width: 15%;
+    padding: 1rem;
+    margin: 0 1rem;
+    border: 1px solid peru;
+}
+
+.about-us .chefs-items article:hover {
+    border: 1px solid navajowhite;
+}
+
+.about-us .chefs-items article img {
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: 2px solid peru;
+}
+
+.about-us .chefs-items article h3 {
+    color: navajowhite;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.about-us .chefs-items article h4 {
+    color: gainsboro;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.about-us .chefs-items article p {
+    width: 80%;
+    color: gray;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}

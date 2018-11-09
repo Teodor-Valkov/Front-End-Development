@@ -1,0 +1,64 @@
+.desserts {
+    background-image: url('../../images/background-black.jpg');
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.desserts .heading {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.desserts .heading h2 {
+    color: navajowhite;
+    font-size: 3rem;
+}
+
+.desserts .heading p {
+    color: gainsboro;
+}
+
+.desserts .desserts-items {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.desserts .desserts-items article {
+    width: 20%;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid peru;
+}
+
+.desserts .desserts-items article:hover {
+    border: 1px solid navajowhite;
+}
+
+.desserts .desserts-items article img {
+    width: 80%;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid peru;
+}
+
+.desserts .desserts-items article h3 {
+    padding-top: 1rem;
+    color: navajowhite;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.desserts .desserts-items article p {
+    color: gray;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+.desserts .desserts-items article p.price {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    color: peru;
+    font-weight: 700;
+}

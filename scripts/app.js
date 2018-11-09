@@ -4,9 +4,13 @@ $(() => {
 
     this.get('index.html', controller.home);
     this.get('#/menu', controller.menu);
-    this.get('#/services', controller.services);
-    this.get('#/about', controller.about);
-    this.get('#/contact', controller.contact);
+    this.get('#/reserve', controller.reserve);
+    this.get('#/why-us', controller.whyUs);
+    this.get('#/about-us', controller.aboutUs);
+    this.get('#/pizza', controller.pizza);
+    this.get('#/pasta-risotto', controller.pastaRisotto);
+    this.get('#/desserts', controller.desserts);
+    this.get('#/drinks', controller.drinks);
   });
 
   app.run();
