@@ -1,91 +1,83 @@
 let controller = (() => {
   function home() {
-    this.loadPartials(
-      getPartials('content/home.hbs')
-    )
+    this.loadPartials({
+      page: './pages/content/home.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
   }
   
   function menu() {
-    this.loadPartials(
-      getPartials('content/menu.hbs')
-    )
+    this.loadPartials({
+      page: './pages/content/menu.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
   }
 
   function reserve() {
-    this.loadPartials(
-      getPartials('content/reserve.hbs')
-    )
+    this.loadPartials({
+      page: './pages/content/reserve.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
   }
 
   function whyUs() {
-    this.loadPartials(
-      getPartials('content/why-us.hbs')
-    )
+    this.loadPartials({
+      page: './pages/content/why-us.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
   }
   
   function aboutUs() {
-    this.loadPartials(
-      getPartials('content/about-us.hbs')
-    )
+    this.loadPartials({
+      page: './pages/content/about-us.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
   }
 
   function pizza() {
-    this.loadPartials(
-      getPartials('menu/pizza.hbs')
-    )
+    this.loadPartials({
+      page: './pages/menu/pizza.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
   }
 
   function pastaRisotto() {
-    this.loadPartials(
-      getPartials('menu/pasta-risotto.hbs')
-    )
+    this.loadPartials({
+      page: './pages/menu/pasta-risotto.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
   }
 
   function desserts() {
-    this.loadPartials(
-      getPartials('menu/desserts.hbs')
-    )
+    this.loadPartials({
+      page: './pages/menu/desserts.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
   }
 
   function drinks() {
-    this.loadPartials(
-      getPartials('menu/drinks.hbs')
-    )
+    this.loadPartials({
+      page: './pages/menu/drinks.hbs',
+    })
     .then(function () {
-      this.partial('./templates/main.hbs');
+      this.partial('./pages/site.hbs');
     });
-  }
-
-  function getPartials(handlebarTemplatePage) {
-    return {
-      header: './pages/common/header.hbs',
-      page: './pages/' + handlebarTemplatePage,
-      footer: './pages/common/footer.hbs'
-    }
   }
 
   return {

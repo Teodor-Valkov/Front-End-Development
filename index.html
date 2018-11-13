@@ -4,18 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/handlebars.min.js"></script>
     <script src="scripts/sammy.min.js"></script>
     <script src="scripts/sammy.handlebars.plugin.js"></script>
     <script src="scripts/redirect.js"></script>
-	<script src="scripts/controller.js"></script>
+    <script src="scripts/controller.js"></script>
     <script src="scripts/app.js"></script>
 </head>
 
 <body>
+    <input type="checkbox" name="nav-toggle" id="nav-toggle" value="" />
+    <header>
+        <a href="/home">
+            Pizza <span>Delicious</span>
+        </a>
+
+        <label id="toggle" for="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            Menu
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/reserve">Reserve</a></li>
+                <li><a href="/why-us">Why us</a></li>
+                <li><a href="/about-us">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div id="container"></div>
+
+    <footer class="site-footer">
+        <div class="contacts">
+            <p>Contact us</p>
+            <ul>
+                <li><i class="fas fa-phone"></i> 0700 123 456 789</li>
+                <li><i class="fas fa-envelope"></i> pizza_delicious@gmail.com</li>
+                <li><i class="fas fa-clock"></i> Monday - Friday: 11:00 - 23:00</li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <p>Subscribe for our special offers</p>
+            <form action="">
+                <input class="text" type="email" placeholder="Your Email Address" required />
+                <input class="button" type="submit" value="Subsribe" />
+            </form>
+        </div>
+        <div class="follow">
+            <p>Follow us</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

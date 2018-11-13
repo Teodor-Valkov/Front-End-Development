@@ -18,6 +18,25 @@
     color: gainsboro;
 }
 
+.pasta-risotto .heading a {
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+	font-size: 0.9rem;
+	cursor: pointer;
+	background: transparent;
+	color: gainsboro;
+	border: 2px solid navajowhite;
+	border-radius: 0.2rem;
+	padding: 0.3rem 0.8rem;
+    font-weight: bold;
+}
+
+.pasta-risotto .heading a:hover {
+    background-color: navajowhite;
+    color: black;
+}
+
 .pasta-risotto .pasta-risotto-items {
     margin: 3rem 0;
     display: flex;

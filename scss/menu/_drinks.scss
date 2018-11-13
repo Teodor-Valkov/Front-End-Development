@@ -1,62 +1,82 @@
-.pizza {
+.drinks {
     background-image: url('../../images/background-black.jpg');
     text-align: center;
     padding: 1rem 0;
 }
 
-.pizza .heading {
+.drinks .heading {
     width: 70%;
     margin: 3rem auto;
 }
 
-.pizza .heading h2 {
+.drinks .heading h2 {
     color: navajowhite;
     font-size: 3rem;
 }
 
-.pizza .heading p {
+.drinks .heading p {
     color: gainsboro;
+    margin-bottom: 1rem;
 }
 
-.pizza .pizza-items {
+.drinks .heading a {
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+	font-size: 0.9rem;
+	cursor: pointer;
+	background: transparent;
+	color: gainsboro;
+	border: 2px solid navajowhite;
+	border-radius: 0.2rem;
+	padding: 0.3rem 0.8rem;
+    font-weight: bold;
+}
+
+.drinks .heading a:hover {
+    background-color: navajowhite;
+    color: black;
+}
+
+.drinks .drinks-items {
     margin: 3rem 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.pizza .pizza-items article {
+.drinks .drinks-items article {
     width: 20%;
     padding: 2rem;
     margin: 1rem;
     border: 1px solid peru;
 }
 
-.pizza .pizza-items article:hover {
+.drinks .drinks-items article:hover {
     border: 1px solid navajowhite;
 }
 
-.pizza .pizza-items article img {
+.drinks .drinks-items article img {
     width: 80%;
     height: 10rem;
     border-radius: 50%;
     border: 2px solid peru;
 }
 
-.pizza .pizza-items article h3 {
+.drinks .drinks-items article h3 {
     padding-top: 1rem;
     color: navajowhite;
     text-transform: uppercase;
     font-size: 1rem;
 }
 
-.pizza .pizza-items article p {
+.drinks .drinks-items article p {
     color: gray;
     font-size: 0.9rem;
     margin: 0 auto;
 }
 
-.pizza .pizza-items article p.price {
+.drinks .drinks-items article p.price {
     padding-top: 1rem;
     padding-bottom: 0;
     color: peru;
