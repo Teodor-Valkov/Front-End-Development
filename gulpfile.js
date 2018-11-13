@@ -18,4 +18,8 @@ gulp.task('scss', function () {
 	.pipe(gulp.dest( path.SCSS_DESTINATION ));
 });
 
-gulp.task('default', 'scss');
+gulp.task('update', function() {
+	gulp.watch(path.SCSS_SOURCE, ['scss']);
+});
+
+gulp.task('default', ['scss', 'update']);

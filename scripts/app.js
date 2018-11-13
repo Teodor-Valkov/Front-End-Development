@@ -1,5 +1,5 @@
 $(() => {
-  const app = Sammy('#container', function () {
+  const app = Sammy('#site-content', function () {
     this.use('Handlebars', 'hbs');
 
     this.get('index.html', controller.home);
