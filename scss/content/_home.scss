@@ -1,61 +1,60 @@
-.home-header {
+.header {
     background-image: url('../../images/background-main.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 2rem;
+    padding: 5rem;
 }
 
-.home-header .wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.home-header .heading {
-    width: 50%;
+.header .heading {
+    width: 30rem;
     color: white;
-    padding: 1rem 2rem;
+    padding: 2rem;
     background-color: rgba(0,0,0,0.4);
 }
 
-a.button {
-	display: inline-block;
-	outline: none;
+.header .heading h1 {
+    font-size: 2rem;
+}
+
+.header .heading a {
 	text-decoration: none;
-	font-size: 0.9rem;
-	cursor: pointer;
-	background: transparent;
 	color: white;
-	border: 2px solid white;
-	border-radius: 0.2rem;
-	padding: 0.3rem 0.8rem;
+	border: 2px solid gainsboro;
+	border-radius: 0.3rem;
+	padding: 0.5rem 0.8rem;
     font-weight: bold;
-    margin-bottom: 1rem;
 }
 
-a.button:hover {
-    background-color: white;
+.header .heading a:hover {
     color: black;
+    background-color: white;
 }
 
-.home-content {
-    width: 70%;
+.home {
+    width: 80%;
     margin: 0 auto;
+    padding: 2rem;
 }
 
-.home-content blockquote p {
+.home blockquote p {
     padding: 0;
 }
 
-.home-content blockquote p.moto {
+.home blockquote p.moto {
     padding-bottom: 0.5rem;
 }
 
-@media screen and (min-width: 800px) {
-    .home-header .wrapper {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+@media screen and (max-width: 1024px) {
+    .header .heading h1 {
+        font-size: 1.8rem;
     }
-    .home-header .heading {
-        margin-left: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .header .heading {
+        width: 100%;
+        min-width: 0;
+        text-align: center;
     }
 }

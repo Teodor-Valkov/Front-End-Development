@@ -6,25 +6,31 @@ body, table, th, td, form, input, textarea, option, select {
 	font: inherit;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 480px) {
+	html {
+		font-size: 12px
+	}
+}
+
+@media screen and (min-width: 768px) {
 	html {
 		font-size: 14px
 	}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 960px) {
 	html {
 		font-size: 16px
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
 	html {
 		font-size: 18px
 	}
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1600px) {
 	html {
 		font-size: 20px
 	}
@@ -32,40 +38,40 @@ body, table, th, td, form, input, textarea, option, select {
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2em;
-	padding-bottom: 0.5em;
+	padding-bottom: 1rem;
 }
 
 h1 {
-	font-size: 2.2em;
+	font-size: 2.5em;
 }
 
 h2 {
-	font-size: 2.0em;
+	font-size: 2.25em;
 }
 
 h3 {
-	font-size: 1.8em;
+	font-size: 2.0em;
 }
 
 h4 {
-	font-size: 1.6em;
+	font-size: 1.75em;
 }
 
 h5 {
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 h6 {
-	font-size: 1.2em;
+	font-size: 1.25em;
 }
 
 p, ul, ol {
 	margin: 0;
-	padding-bottom: 1.5em;
+	padding-bottom: 1.5rem;
 }
 
 ul, ol {
-	margin-left: 1.5em;
+	margin-left: 1.5rem;
 }
 
 li {
@@ -92,21 +98,20 @@ ul ul ul li {
 } */
 
 blockquote {
-	border-left: 4px solid #DDD;
+	width: 50%;
 	font-style: italic;
-	margin: 0 0 2rem 5rem;
-	padding: 1rem 2rem;
-	color: #444;
-	font-family: "Georgia", serif;
-	padding-top: 0;
+	font-family: 'Georgia', serif;
+	border-left: 5px solid gainsboro;
+	margin-left: 5rem;
+	padding: 0.3rem 2rem;
 }
 
 blockquote .author {
 	text-align: right;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 680px) {
 	blockquote {
-		width: 50%;
+		width: 80%;
 	}
 }

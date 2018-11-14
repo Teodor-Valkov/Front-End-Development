@@ -1,100 +1,114 @@
-@media screen and (min-width: 1020px) {
-	.site-footer .wrapper {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
-	}
-}
-
-footer {
-	background-color: rgb(50, 50, 50);
-	color: gainsboro;
+#site-footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: top;
+	flex-wrap: wrap;
+	background-color: rgb(50, 50, 50);
+	color: white;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 1rem;
 }
 
-footer ul {
+#site-footer div {
+	width: 30%;
+}
+
+#site-footer ul {
 	padding: 0;
 	margin: 0;
 }
 
-footer ul li {
-	display: block;
-	margin: 0.5rem;
-	list-style: none;
+#site-footer ul li {
+	padding: 0.5rem;
 }
 
-footer p {
-	padding-bottom: 0.5rem;
+#site-footer p {
 	font-weight: 700;
-	text-transform: uppercase
-}
-
-footer .contacts ul {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-footer .contacts ul li i {
-	margin-right: 0.5rem;
-}
-
-
-footer .subscribe p {
 	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 1rem;
 }
 
-
-footer .subscribe form input {
-	display: block;
-	padding: 0.6rem;
-	width: 100%;
-	margin-top: 0.5rem;
+#site-footer .subscribe form input {
+	display: inline-block;
+	width: 68%;
 	border: none;
 	outline: none;
 	font-size: 0.8rem;
-	color: gray;
 	border-radius: 0.3rem;
-	border-bottom: 1px solid gainsboro;
+	padding: 0.6rem;
 }
 
-footer .subscribe form input[type=submit] {
-	width: 30%;
-	margin-top: 1rem;
+#site-footer .subscribe form input[type=submit] {
 	cursor: pointer;
+	width: 28%;
+	color: black;
 	background-color: navajowhite;
 	border: 2px solid navajowhite;
-	color: black;
+	margin-left: 0.3rem;
+
 }
 
-footer .subscribe form input[type=submit]:hover {
+#site-footer .subscribe form input[type=submit]:hover {
 	background-color: black;
 	color: navajowhite;
+	border: 2px solid navajowhite;
 }
 
-footer .follow {
-	text-align: center;
-}
-
-footer .follow ul {
+#site-footer .follow ul {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
-footer .follow ul li i {
-	position: relative;
-	top: 0.3rem;
-	font-size: 1.5rem;
-	color: gainsboro;
-	display: inline-block;
+#site-footer .follow ul li {
+	margin: 0 0.5rem;
 }
 
-footer .follow ul li i:hover {
+#site-footer .follow ul li i {
+	font-size: 1.5rem;
+	color: white;
+}
+
+#site-footer .follow ul li i:hover {
 	color: navajowhite;
+}
+
+#site-footer .contacts ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#site-footer .contacts ul li i {
+	margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {	
+	#site-footer .subscribe form input {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#site-footer .subscribe form input[type=submit] {
+		margin: 1rem auto 0 auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#site-footer div {
+		margin: 1rem;
+		width: 75%;
+	}
+
+	#site-footer .subscribe form input {
+		width: 50%;
+		min-width: 15rem;
+	}
+
+	#site-footer .subscribe form input[type=submit] {
+		min-width: 7rem;
+		max-width: 7rem;
+	}
 }

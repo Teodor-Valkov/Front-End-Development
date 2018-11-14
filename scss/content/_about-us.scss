@@ -1,12 +1,13 @@
 .about-us {
-    background-image: url('../../images/background-black.jpg');
+    // background-image: url('../../images/background-black.jpg');
+    background-color: rgb(20, 20, 20);
     text-align: center;
     padding: 1rem 0;
 }
 
 .about-us .heading {
-    width: 70%;
-    margin: 3rem auto;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .about-us .heading h2 {
@@ -18,29 +19,29 @@
     color: gainsboro;
 }
 
+.about-us .heading .stars {
+    margin-top: 2rem;
+}
+
+.about-us .heading .stars i {
+    font-size: 2rem;
+    color: navajowhite;
+}
+
 .about-us .about-us-items {
-    margin: 5rem 0;
+    margin: 2rem 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-us .about-us-items article {
     width: 50%;
 }
 
-.about-us .about-us-items .about-us-img {
-    background: url('../../images/about.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.about-us .about-us-items .story {
-    padding: 2rem;
-}
-
 .about-us .about-us-items .story h3 {
     color: navajowhite;
+    padding-top: 1rem;
 }
 
 .about-us .about-us-items .story p {
@@ -50,8 +51,16 @@
     margin: 0 auto;
 }
 
+.about-us .about-us-items .about-us-img {
+    background: url('../../images/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+}
+
 .about-us .chefs {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .about-us .chefs-items {
@@ -76,7 +85,8 @@
 
 .about-us .chefs-items article:hover {
     border: 1px solid navajowhite;
-}
+    box-shadow: 0 0 1rem 0 navajowhite;
+    transition: border 0.3s ease-in, box-shadow 0.3s ease-in;}
 
 .about-us .chefs-items article img {
     width: 50%;
@@ -103,4 +113,24 @@
     color: gray;
     font-size: 0.9rem;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 680px) {
+    .about-us .about-us-items article {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .about-us .about-us-items .story {
+        order: 1;
+    }
+    
+    .about-us .about-us-items .about-us-img {
+        order: 2;
+        height: 20rem;
+    }
+
+    .about-us .about-us-items .story p {
+        text-align: center;
+    }
 }

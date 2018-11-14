@@ -1,12 +1,12 @@
 .why-us {
     background-image: url('../../images/food.jpg');
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .why-us .heading {
-    width: 70%;
-    margin: 3rem auto;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .why-us .heading h2 {
@@ -14,8 +14,7 @@
 }
 
 .why-us .why-us-items {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,8 +22,8 @@
 }
 
 .why-us .why-us-items article {
-    margin: 1rem 3rem;
-    width: 20%;
+    margin: 1rem;
+    width: 28%;
     text-align: center;
 }
 
@@ -32,10 +31,24 @@
     font-size: 3rem;
 }
 
-.why-us .why-us-items article h3 {
-    font-size: 1.5rem;
+.why-us .why-us-items article h4 {
+    padding-top: 1rem;
 }
 
 .why-us .why-us-items article p {
     font-size: 0.9rem;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .why-us .why-us-items article {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .why-us .why-us-items article {
+        width: 80%;
+    }
 }

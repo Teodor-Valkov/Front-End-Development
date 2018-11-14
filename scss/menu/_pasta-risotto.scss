@@ -53,6 +53,8 @@
 
 .pasta-risotto .pasta-risotto-items article:hover {
     border: 1px solid navajowhite;
+    box-shadow: 0 0 1rem 0 navajowhite;
+    transition: border 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 
 .pasta-risotto .pasta-risotto-items article img {
