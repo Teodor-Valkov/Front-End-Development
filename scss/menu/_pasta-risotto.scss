@@ -5,13 +5,12 @@
 }
 
 .pasta-risotto .heading {
-    width: 70%;
-    margin: 3rem auto;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .pasta-risotto .heading h2 {
     color: navajowhite;
-    font-size: 3rem;
 }
 
 .pasta-risotto .heading p {
@@ -83,3 +82,49 @@
     color: peru;
     font-weight: 700;
 }
+
+// With 4-2-1
+
+@media screen and (max-width: 1200px) {
+    .pasta-risotto .pasta-risotto-items article {
+        width: 33%;  
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .pasta-risotto .pasta-risotto-items article {
+        width: 38%;  
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pasta-risotto .pasta-risotto-items article {
+        width: 53%;  
+    }
+}
+
+// With 4-3-2-1
+
+// @media screen and (max-width: 1200px) {
+//     .pasta-risotto .pasta-risotto-items article {
+//         width: 25%;  
+//     }
+// }
+
+// @media screen and (max-width: 1024px) {
+//     .pasta-risotto .pasta-risotto-items article {
+//         width: 28%;  
+//     }
+// }
+
+// @media screen and (max-width: 680px) {
+//     .pasta-risotto .pasta-risotto-items article {
+//         width: 38%;  
+//     }
+// }
+
+// @media screen and (max-width: 480px) {
+//     .pasta-risotto .pasta-risotto-items article {
+//         width: 53%;  
+//     }
+// }

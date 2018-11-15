@@ -1,6 +1,6 @@
 .about-us {
-    // background-image: url('../../images/background-black.jpg');
-    background-color: rgb(20, 20, 20);
+    background-image: url('../../images/background-black.jpg');
+    background-size: cover;
     text-align: center;
     padding: 1rem 0;
 }
@@ -12,15 +12,16 @@
 
 .about-us .heading h2 {
     color: navajowhite;
-    font-size: 3rem;
 }
 
 .about-us .heading p {
     color: gainsboro;
+    text-align: left;
 }
 
 .about-us .heading .stars {
     margin-top: 2rem;
+    text-align: center;
 }
 
 .about-us .heading .stars i {
@@ -28,30 +29,30 @@
     color: navajowhite;
 }
 
-.about-us .about-us-items {
-    margin: 2rem 0;
+.about-us .story {
+    margin: 2rem 0 4rem 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.about-us .about-us-items article {
+.about-us .story article {
     width: 50%;
 }
 
-.about-us .about-us-items .story h3 {
+.about-us .story .story-items h4 {
     color: navajowhite;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
-.about-us .about-us-items .story p {
+.about-us .story .story-items p {
     color: gainsboro;
     text-align: left;
     width: 80%;
     margin: 0 auto;
 }
 
-.about-us .about-us-items .about-us-img {
+.about-us .story .story-img {
     background: url('../../images/about.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,9 +67,10 @@
 .about-us .chefs-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.about-us .chefs h3 {
+.about-us .chefs h4 {
     color: navajowhite;
 }
 
@@ -77,7 +79,7 @@
 }
 
 .about-us .chefs-items article {
-    width: 15%;
+    width: 20%;
     padding: 1rem;
     margin: 0 1rem;
     border: 1px solid peru;
@@ -95,17 +97,12 @@
     border: 2px solid peru;
 }
 
-.about-us .chefs-items article h3 {
+.about-us .chefs-items article h5 {
     color: navajowhite;
     text-transform: uppercase;
     font-size: 1rem;
-}
-
-.about-us .chefs-items article h4 {
-    color: gainsboro;
-    font-size: 0.8rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
 }
 
 .about-us .chefs-items article p {
@@ -115,22 +112,43 @@
     margin: 0 auto;
 }
 
+.about-us .chefs-items article p.job {
+    color: gainsboro;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+    .about-us .chefs-items article {
+        width: 35%;        
+        margin-bottom: 2rem;
+    }
+}
+
 @media screen and (max-width: 680px) {
-    .about-us .about-us-items article {
+    .about-us .story article {
         width: 100%;
-        margin-bottom: 1rem;
     }
     
-    .about-us .about-us-items .story {
+    .about-us .story .story-items {
         order: 1;
     }
     
-    .about-us .about-us-items .about-us-img {
+    .about-us .story .story-img {
         order: 2;
         height: 20rem;
     }
 
-    .about-us .about-us-items .story p {
+    .about-us .story .story-items h5 {
+        padding-top: 0;
+    }
+
+    .about-us .story .story-items p, .about-us .heading p {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-us .chefs-items article {
+        width: 60%;  
     }
 }

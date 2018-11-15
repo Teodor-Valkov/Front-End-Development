@@ -5,18 +5,16 @@
 }
 
 .drinks .heading {
-    width: 70%;
-    margin: 3rem auto;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .drinks .heading h2 {
     color: navajowhite;
-    font-size: 3rem;
 }
 
 .drinks .heading p {
     color: gainsboro;
-    margin-bottom: 1rem;
 }
 
 .drinks .heading a {
@@ -84,3 +82,50 @@
     color: peru;
     font-weight: 700;
 }
+
+
+// With 4-2-1
+
+@media screen and (max-width: 1200px) {
+    .drinks .drinks-items article {
+        width: 33%;  
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .drinks .drinks-items article {
+        width: 38%;  
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .drinks .drinks-items article {
+        width: 53%;  
+    }
+}
+
+// With 4-3-2-1
+
+// @media screen and (max-width: 1200px) {
+//     .drinks .drinks-items article {
+//         width: 25%;  
+//     }
+// }
+
+// @media screen and (max-width: 1024px) {
+//     .drinks .drinks-items article {
+//         width: 28%;  
+//     }
+// }
+
+// @media screen and (max-width: 680px) {
+//     .drinks .drinks-items article {
+//         width: 38%;  
+//     }
+// }
+
+// @media screen and (max-width: 480px) {
+//     .drinks .drinks-items article {
+//         width: 53%;  
+//     }
+// }

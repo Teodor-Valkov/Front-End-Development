@@ -10,7 +10,7 @@
 }
 
 .reserve .heading {
-    width: 70%;
+    width: 80%;
     margin: 2rem auto;
 }
 
@@ -26,8 +26,8 @@
 }
 
 .reserve .reserve-items {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 1rem auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,8 +35,8 @@
 }
 
 .reserve .reserve-items article {
-    margin: 1rem 3rem;
-    width: 20%;
+    margin: 1rem 2rem;
+    width: 25%;
     text-align: center;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .reserve form {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -64,9 +64,9 @@
 }
 
 .reserve form input {
-    width: 50%;
+    width: 70%;
     padding: 0.7rem 1.5rem 0.7rem 2.5rem;
-    margin-bottom: 1rem;
+    margin: 0.5rem auto;
     border: none;
     outline: none;
     font-size: 0.8rem;
@@ -87,7 +87,7 @@
     width: 20%;
     margin: 1rem auto;
     border: none;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     text-align: center;
     cursor: pointer;
     background-color: navajowhite;
@@ -100,4 +100,34 @@
 .reserve form input[type=submit]:hover {
     background-color: black;
     color: navajowhite;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .reserve .reserve-items article {
+        width: 35%;
+    }
+
+    .reserve form input {
+        width: 80%;
+    }
+
+    .reserve form input[type=submit] {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .reserve .reserve-items article {
+        width: 80%;
+    }
+    
+    .reserve form input {
+        width: 90%;
+    }
+
+    .reserve form input[type=submit] {
+        width: 40%;
+    }
 }

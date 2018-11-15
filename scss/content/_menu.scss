@@ -5,17 +5,16 @@
 }
 
 .menu .wrapper {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .menu .heading {
-    width: 70%;
-    margin: 3rem auto;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .menu .heading h2 {
     color: navajowhite;
-    font-size: 3rem;
 }
 
 .menu .heading p {
@@ -30,13 +29,13 @@
 
 .menu .menu-items article {
     width: 20%;
-    margin: 0 1rem 5rem 1rem;
+    margin: 1rem;
     border: 1px solid peru;
 }
 
 .menu .menu-items article a {
     display: block;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     text-decoration: none;
 }
 
@@ -46,20 +45,34 @@
     transition: border 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 
-.menu .menu-items article img {
+.menu .menu-items article a img {
     width: 100%;
     border-radius: 50%;
 }
 
-.menu .menu-items article h3 {
+.menu .menu-items article a h4 {
     padding-top: 2rem;
     color: navajowhite;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .menu .people img {
     width: 100%;
+    margin-top: 2rem;
     padding: 0;
     opacity: 0.8;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .menu .menu-items article {
+        width: 35%;        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu .menu-items article {
+        width: 80%;
+    }
 }
