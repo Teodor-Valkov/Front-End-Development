@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: rgb(50, 50, 50);
 }
 
@@ -45,6 +45,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  #site-header {
+    padding: 1rem 2rem;
+  }
+
   #toggle {
     display: block;
   }

@@ -103,6 +103,7 @@ blockquote {
 	font-family: 'Georgia', serif;
 	border-left: 5px solid gainsboro;
 	margin-left: 5rem;
+	margin-bottom: 1.5rem;
 	padding: 0.3rem 2rem;
 }
 
@@ -113,5 +114,6 @@ blockquote .author {
 @media screen and (max-width: 680px) {
 	blockquote {
 		width: 80%;
+		margin-left: 3rem;
 	}
 }
