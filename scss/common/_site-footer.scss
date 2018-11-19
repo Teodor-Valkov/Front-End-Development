@@ -1,0 +1,114 @@
+#site-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: top;
+	flex-wrap: wrap;
+	background-color: rgb(50, 50, 50);
+	color: white;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+#site-footer div {
+	width: 30%;
+}
+
+#site-footer ul {
+	padding: 0;
+	margin: 0;
+}
+
+#site-footer ul li {
+	padding: 0.5rem;
+}
+
+#site-footer p {
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+}
+
+#site-footer .subscribe form input {
+	display: inline-block;
+	width: 68%;
+	border: none;
+	outline: none;
+	font-size: 0.8rem;
+	border-radius: 0.3rem;
+	padding: 0.6rem;
+}
+
+#site-footer .subscribe form input[type=submit] {
+	cursor: pointer;
+	width: 28%;
+	color: black;
+	background-color: navajowhite;
+	border: 2px solid navajowhite;
+	margin-left: 0.3rem;
+
+}
+
+#site-footer .subscribe form input[type=submit]:hover {
+	background-color: black;
+	color: navajowhite;
+	border: 2px solid navajowhite;
+}
+
+#site-footer .follow ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#site-footer .follow ul li {
+	margin: 0 0.5rem;
+}
+
+#site-footer .follow ul li i {
+	font-size: 1.5rem;
+	color: white;
+}
+
+#site-footer .follow ul li i:hover {
+	color: navajowhite;
+}
+
+#site-footer .contacts ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#site-footer .contacts ul li i {
+	margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {	
+	#site-footer .subscribe form input {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#site-footer .subscribe form input[type=submit] {
+		margin: 1rem auto 0 auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#site-footer div {
+		margin: 1rem;
+		width: 75%;
+	}
+
+	#site-footer .subscribe form input {
+		width: 50%;
+		min-width: 15rem;
+	}
+
+	#site-footer .subscribe form input[type=submit] {
+		min-width: 7rem;
+		max-width: 7rem;
+	}
+}
