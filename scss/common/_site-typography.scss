@@ -1,39 +1,29 @@
 html {
-	font: 12px/1.5 'Lato', 'Helvetica', sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+
+	@include media-query(phone-wide) {
+		font-size: 14px;
+	}
+
+	@include media-query(phablet-wide) {
+		font-size: 16px;
+	}
+
+	@include media-query(tablet-wide) {
+		font-size: 18px;
+	}
+
+	@include media-query(desktop-wide) {
+		font-size: 20px;
+	}
 }
 
 body, table, th, td, form, input, textarea, option, select {
-	font: inherit;
-}
-
-@media screen and (min-width: 480px) {
-	html {
-		font-size: 12px
-	}
-}
-
-@media screen and (min-width: 768px) {
-	html {
-		font-size: 14px
-	}
-}
-
-@media screen and (min-width: 960px) {
-	html {
-		font-size: 16px
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	html {
-		font-size: 18px
-	}
-}
-
-@media screen and (min-width: 1600px) {
-	html {
-		font-size: 20px
-	}
+	font-size: inherit;
+	line-height: inherit;
+	font-family: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,28 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 1rem;
 }
 
-h1 {
-	font-size: 3.2em;
-}
+$headings: (h1: 3.2em, h2: 2.8em, h3: 2.3em, h4: 1.8em, h5: 1.5em, h6: 1.2em);
 
-h2 {
-	font-size: 2.8em;
-}
-
-h3 {
-	font-size: 2.3em;
-}
-
-h4 {
-	font-size: 1.8em;
-}
-
-h5 {
-	font-size: 1.5em;
-}
-
-h6 {
-	font-size: 1.2em;
+@each $heading, $size in $headings {
+	#{$heading} { font-size: $size; }
 }
 
 p, ul, ol {
@@ -79,24 +51,6 @@ li {
 	list-style: none;
 }
 
-/* 
-ul ul {
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-}
-
-ul li {
-	list-style-type: square;
-}
-
-ul ul li {
-	list-style-type: disc;
-}
-
-ul ul ul li {
-	list-style-type: circle;
-} */
-
 blockquote {
 	width: 50%;
 	font-style: italic;
@@ -105,14 +59,12 @@ blockquote {
 	margin-left: 5rem;
 	margin-bottom: 1.5rem;
 	padding: 0.3rem 2rem;
-}
+	 
+	.author {
+		text-align: right;
+	}
 
-blockquote .author {
-	text-align: right;
-}
-
-@media screen and (max-width: 680px) {
-	blockquote {
+	@include media-query(phablet, max) {
 		width: 80%;
 		margin-left: 3rem;
 	}

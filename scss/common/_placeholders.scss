@@ -1,0 +1,15 @@
+%display-flex-space-between {
+    display: flex;
+	justify-content: space-between;
+}
+
+%display-flex-space-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+%display-flex-center-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

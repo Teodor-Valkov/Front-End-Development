@@ -1,68 +1,65 @@
+$background_transparent: rgba(0,0,0,0.4);
+$background_white : white;
+
 .header {
-    background-image: url('../../images/background-main.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 5rem;
-}
+	background-image: url('../../images/background-main.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	padding: 5rem;
+    max-width: $website-max-width;
+    
+	.heading {
+		width: 30rem;
+		padding: 2rem;
+		color: $color_white;
+		background-color: $background_transparent;
+    
+        h1 {
+			font-size: 2rem;
+        }
+    
+        a {
+			display: inline-block;
+			text-decoration: none;
+			font-weight: bold;
+			border: 2px solid $color_white;
+			border-radius: 0.3rem;
+			padding: 0.5rem 0.8rem;
+			animation: bounce 0.5s linear infinite;
+			color: $color_white;
 
-.header .heading {
-    width: 30rem;
-    color: white;
-    padding: 2rem;
-    background-color: rgba(0,0,0,0.4);
-}
+            &:hover {
+				color: $color_black;
+				background-color: $background_white;
+			}
+        }
+        
+        @include media-query(phablet, max) {
+            text-align: center;
+            width: 100%;
+        }
+	}
 
-.header .heading h1 {
-    font-size: 2rem;
-}
-
-.header .heading a {
-    display: inline-block;
-	text-decoration: none;
-	color: white;
-	border: 2px solid gainsboro;
-	border-radius: 0.3rem;
-	padding: 0.5rem 0.8rem;
-    font-weight: bold;
-}
-
-.header .heading a:hover {
-    color: black;
-    background-color: white;
-}
-
-.home {
-    max-width: 80rem;
-    width: 70%;
-    margin: 3rem auto 2rem auto;
-}
-
-.home h3 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.home blockquote p {
-    padding: 0;
-}
-
-.home blockquote p.moto {
-    padding-bottom: 0.5rem;
-}
-
-@media screen and (max-width: 1024px) {
-    .header .heading h1 {
-        font-size: 1.8rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .header .heading {
-        width: 100%;
-        min-width: 0;
-        text-align: center;
-    }
+	.home {
+    	width: 70%;
+		max-width: 80rem;
+    	margin: 3rem auto 2rem auto;
+    
+		h3 {
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+    
+	    blockquote {
+			p {
+				padding: 0;
+    
+           		.moto {
+	    			padding-bottom: 0.5rem;
+		    	}
+	    	}
+    	}
+	}
 }

@@ -1,129 +1,119 @@
 #site-footer {
-	display: flex;
-	justify-content: space-around;
+	@extend %display-flex-space-around;
 	align-items: top;
 	flex-wrap: wrap;
-	background-color: rgb(50, 50, 50);
-	color: white;
-	max-width: 100rem;
-    margin: 0 auto;
+	margin: 0 auto;
 	padding: 1rem;
-}
+	max-width: $website-max-width;
+	color: $color_white;
+	background-color: $background_gray;
 
-#site-footer div {
-	width: 30%;
-}
+	div {
+		width: 30%;
+	
+		p {
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			padding-bottom: 1rem;
+		}
 
-#site-footer ul {
-	padding: 0;
-	margin: 0;
-}
+		ul {
+			padding: 0;
+			margin: 0;
+		
+			li {
+				padding: 0.5rem;
+			}
+		}
 
-#site-footer ul li {
-	padding: 0.5rem;
-}
-
-#site-footer p {
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	padding-bottom: 1rem;
-}
-
-#site-footer .subscribe form input {
-	display: inline-block;
-	width: 68%;
-	border: none;
-	outline: none;
-	font-size: 0.8rem;
-	border-radius: 0.3rem;
-	padding: 0.6rem;
-}
-
-#site-footer .subscribe form input[type=submit] {
-	cursor: pointer;
-	width: 28%;
-	color: black;
-	background-color: navajowhite;
-	border: 2px solid navajowhite;
-	margin-left: 0.3rem;
-
-}
-
-#site-footer .subscribe form input[type=submit]:hover {
-	background-color: black;
-	color: navajowhite;
-	border: 2px solid navajowhite;
-}
-
-#site-footer .follow ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#site-footer .follow ul li {
-	margin: 0 0.5rem;
-}
-
-#site-footer .follow ul li i {
-	font-size: 1.5rem;
-	color: white;
-}
-
-#site-footer .follow ul li i:hover {
-	color: navajowhite;
-	position: relative;
-	animation: bounce 0.5s infinite linear;
-}
-
-#site-footer .contacts ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#site-footer .contacts ul li i {
-	margin-right: 0.5rem;
-}
-
-
-#site-footer .contacts ul li:first-of-type i {
-	position: relative;
-	animation: bounce 0.3s ease infinite ;
-}
-
-@media screen and (max-width: 1024px) {	
-	#site-footer .subscribe form input {
-		display: block;
-		width: 90%;
-		margin: 0 auto;
+		@include media-query(phablet-wide, max) {
+			width: 75%;
+			margin: 1rem;
+		}
 	}
 
-	#site-footer .subscribe form input[type=submit] {
-		margin: 1rem auto 0 auto;
-	}
-}
+	.subscribe {
+		form {
+			input {
+				display: inline-block;
+				border: none;
+				outline: none;
+				width: 65%;
+				font-size: 0.8rem;
+				border-radius: 0.3rem;
+				margin-left: 0.6rem;
+				padding: 0.6rem;
 
-@media screen and (max-width: 768px) {
-	#site-footer div {
-		margin: 1rem;
-		width: 75%;
+				@include media-query(desktop, max) {
+					display: block;
+					width: 90%;
+					margin: 0 auto;
+				}
+
+				@include media-query(phablet-wide, max) {
+					max-width: 20rem;
+				}
+			}
+
+			input[type=submit] {
+				cursor: pointer;
+				border: 1px solid $color_navajowhite;
+				width: 5rem;
+				margin-left: 0.3rem;
+				color: $color_black;
+				background-color: $background_navajowhite;
+
+				&:hover {
+					color: $color_navajowhite;
+					background-color: $background_black;
+				}
+
+				@include media-query(desktop, max) {
+					margin: 1rem auto 0 auto;
+				}
+
+			}
+		}
 	}
 
-	#site-footer .subscribe form input {
-		width: 50%;
-		min-width: 15rem;
+	.follow {
+		ul {
+			@extend %display-flex-center-center;
+			
+			li {
+				margin: 0 0.5rem;
+
+				i {
+					font-size: 1.5rem;
+					color: $color_white;
+
+					&:hover {
+						animation: bounce 0.5s linear infinite;
+						color: $color_navajowhite;
+					}
+				}
+			}
+		}
 	}
 
-	#site-footer .subscribe form input[type=submit] {
-		min-width: 7rem;
-		max-width: 7rem;
-	}
-}
+	.contacts {
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
-@keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.3em; }
-    100% { top: 0; }
+			li {
+				i {
+					margin-right: 0.5rem;
+				}
+
+				&:first-of-type {
+					i {
+						animation: bounce 0.5s linear infinite;
+					}
+				}
+			}
+		}
+	}
 }
