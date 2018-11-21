@@ -41,25 +41,25 @@ $background_white : white;
             width: 100%;
         }
 	}
+}
 
-	.home {
-    	width: 70%;
-		max-width: 80rem;
-    	margin: 3rem auto 2rem auto;
-    
-		h3 {
-			text-align: center;
-			margin-bottom: 1rem;
+.home {
+	width: 70%;
+	max-width: 80rem;
+	margin: 3rem auto 2rem auto;
+
+	h3 {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	blockquote {
+		p {
+			padding: 0;
+
+			   .moto {
+				padding-bottom: 0.5rem;
+			}
 		}
-    
-	    blockquote {
-			p {
-				padding: 0;
-    
-           		.moto {
-	    			padding-bottom: 0.5rem;
-		    	}
-	    	}
-    	}
 	}
 }
