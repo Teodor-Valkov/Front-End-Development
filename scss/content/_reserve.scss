@@ -1,135 +1,121 @@
 .reserve {
-    background-image: url('../../images/map.jpg');
-    background-position: center;
+	background-image: url('../../images/map.jpg');
+	background-position: center;
     background-repeat: no-repeat;
-    background-color: black;
-    text-align: center;
-    color: gainsboro;
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 2rem;
-    opacity: 0.9;
-}
+	text-align: center;
+	opacity: 0.9;
+	margin: 0 auto;
+	padding: 2rem;
+	max-width: $website-max-width;
+	color: $color_gainsboro;
+	background-color: $background_black;
+    
+    .heading {
+		width: 60%;
+		margin: 2rem auto;
+    
+        h2 {
+			font-size: 3rem;
+			margin: 0.5rem auto;
+			color: $color_navajowhite;
+		}
+    
+        p {
+            text-align: left;
+			padding-bottom: 0.5rem;
+			color: $color_gainsboro;
+		}
+	}
+    
+    .reserve-items {
+        display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+		width: 90%;
+		margin: 2rem auto;
+        
+		article {
+			i {
+				font-size: 2em;
+				color: $color_navajowhite;
+            }
+            
+			h3 {
+				font-size: 1.2rem;
+            }
+            
+			p {
+				font-size: 0.8rem;
+				text-transform: uppercase;
+			}
+        }
+        
+        @include media-query(tablet, max) {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-.reserve .heading {
-    width: 70%;
-    margin: 2rem auto;
-}
-
-.reserve .heading h2 {
-    font-size: 3rem;
-    margin: 0.5rem auto;
-    color: navajowhite;
-}
-
-.reserve .heading p {
-    color: gainsboro;
-    padding-bottom: 0.5rem;
-}
-
-.reserve .reserve-items {
-    width: 90%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.reserve .reserve-items article {
-    margin: 1rem 2rem;
-    width: 25%;
-    text-align: center;
-}
-
-.reserve .reserve-items article i {
-    font-size: 2em;
-    color: navajowhite;
-}
-
-.reserve .reserve-items article h3 {
-    font-size: 1.2rem;
-}
-
-.reserve .reserve-items article p {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-}
-
-.reserve form {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.reserve form input {
-    width: 70%;
-    padding: 0.7rem 1.5rem 0.7rem 2.5rem;
-    margin: 0.5rem auto;
-    border: none;
-    outline: none;
-    font-size: 0.8rem;
-    color: gray;
-    border-radius: 0.3rem;
-    border-bottom: 1px solid gainsboro;
-}
-
-.reserve form i {
-    position: relative;
-    left: 2rem;
-    top: 0.1rem;
-    color: black;
-    font-size: 1rem;
-}
-
-.reserve form input[type=submit] {
-    width: 20%;
-    margin: 1rem auto;
-    border: none;
-    border-radius: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    background-color: navajowhite;
-    border: 2px solid navajowhite;
-    color: black;
-    font-size: 1.2rem;
-    padding: 0.6rem;
-}
-
-.reserve form input[type=submit]:hover {
-    background-color: black;
-    color: navajowhite;
-}
-
-
-@media screen and (max-width: 1024px) {
-    .reserve .reserve-items article {
-        width: 35%;
-    }
-
-    .reserve form input {
-        width: 80%;
-    }
-
-    .reserve form input[type=submit] {
-        width: 30%;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .reserve .reserve-items article {
-        width: 80%;
+        @include media-query(phone-wide, max) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     
-    .reserve form input {
-        width: 90%;
-    }
+	form {
+        display: grid;
+		grid-template-rows: repeat(5, 1fr);
+		width: 70%;
+        margin: 0 auto;
 
-    .reserve form input[type=submit] {
-        width: 40%;
+        i {
+			position: relative;
+			left: 2rem;
+			top: 0.1rem;
+			color: $color_black;
+			font-size: 1rem;
+        }
+        
+		input {
+			width: 60%;
+			padding: 0.6rem 2.5rem;
+			border: none;
+			outline: none;
+			font-size: 0.8rem;
+			border-radius: 0.3rem;
+            color: $color_gray;
+            
+            @include media-query(tablet, max) {
+                width: 80%;
+            }
+
+            @include media-query(phone-wide, max) {
+                width: 90%;
+            }
+        }
+
+        #submit-reservation {
+            border: none;
+            text-align: center;
+            border: 2px solid $color_navajowhite;
+            width: 20%;
+            border-radius: 1.5rem;
+            font-size: 1.2rem;
+            padding: 0.6rem;
+            margin: 0.3rem auto;
+            cursor: pointer;
+            color: $color_black;
+            background-color: $background_navajowhite;
+            
+            &:hover {
+                color: $color_navajowhite;
+                background-color: $background_black;
+            }
+
+            @include media-query(tablet, max) {
+                width: 30%;
+            }
+
+            @include media-query(phone-wide, max) {
+                width: 40%;
+            }
+        }
     }
 }
