@@ -1,0 +1,11 @@
+@mixin flex-box($justify, $align, $wrap: no-wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin button-hover($color, $background-color) {
+  color: $color;
+  background-color: $background-color;
+}

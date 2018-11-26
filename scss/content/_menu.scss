@@ -3,72 +3,35 @@
 	background-size: cover;
 	text-align: center;
     margin: 0 auto;
-	max-width: $website-max-width;
-    
+	max-width: $website-max-width;    
 	.wrapper {
 		padding: 1rem;
-    }
-    
-	.heading {
-		width: 70%;
-		margin: 2rem auto;
-    
-        h2 {
-			color: $color_navajowhite;
-		}
-    
-        p {
-			text-align: left;
-			color: $color_white;
-		}
-	}
-    
+    }        
     .menu-items {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 2rem;
-		width: 90%;
-		margin: 2rem auto;
-    
+		@extend %display-grid-items;
+		margin-top: 4rem;
         article {
-			border: 1px solid $color_peru;
-            
+			border: 1px solid $color_peru;            
             a {
 				display: block;
 				text-decoration: none;
-				padding: 2rem 1.5rem;
-            
+				padding: 1rem;            
                 img {
-					width: 100%;
-					border-radius: 50%;
-					margin-top: 1rem;
-				}
-            
+					@extend %grid-items-img-circle;
+				}            
                 h4 {
 					text-transform: uppercase;
-					margin: 4rem auto 0 auto;
+					margin: 4rem auto 1rem auto;
 					color: $color_navajowhite;
 				}
-			}
-            
+			}            
             &:hover {
-				border: 1px solid $color_navajowhite;
-				box-shadow: 0 0 1rem 0 $color_navajowhite;
-				transition: border 0.3s ease-in, box-shadow 0.3s ease-in;
+				@extend %grid-items-hover;
 			}
-        }
-        
-        @include media-query(desktop, max) {
-            grid-template-columns: repeat(2, 1fr);
-            width: 80%;
-        }
-
-        @include media-query(phablet, max) {
-            grid-template-columns: repeat(1, 1fr);
-            width: 70%;
-        }
-    }
-    
+        }        
+	
+		@extend %grid-menu-responsive;
+    }    
 	.people {
 		img {
 			width: 100%;

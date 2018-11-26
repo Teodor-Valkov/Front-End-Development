@@ -1,143 +1,110 @@
 .about-us {
-	background-image: url('../../images/background-black.jpg');
-	background-size: cover;
-	text-align: center;
-	margin: 0 auto;
-	padding: 1rem 0;
-    max-width: $website-max-width;
-    
-	.heading {
-		width: 70%;
-		margin: 2rem auto;
-    
-        h2 {
-			color: $color_navajowhite;
-		}
-    
+  background-image: url("../../images/background-black.jpg");
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: $website-max-width;
+  .heading {
+    .stars {
+      text-align: center;
+      margin-top: 4rem;
+      i {
+        font-size: 2rem;
+        color: $color_navajowhite;
+      }
+    }
+  }
+  .story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem 0;
+    .story-items {
+      .subheading {
+        h4 {
+          padding-top: 0.5rem;
+          color: $color_navajowhite;
+        }
         p {
-			color: $color_gainsboro;
-			text-align: left;
+          text-align: left;
+          width: 70%;
+          margin: 0 auto;
+          color: $color_gainsboro;
         }
-    
-        .stars {
-			text-align: center;
-            padding-bottom: 0;
-            margin-top: 2rem;
-            
-            i {
-				font-size: 2rem;
-				color: $color_navajowhite;
-			}
+      }
+      @include media-query(tablet, max) {
+        order: 1;
+        margin-bottom: 1rem;
+      }
+    }
+    .story-img {
+      background: url("../../images/about.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 20rem;
+      @include media-query(tablet, max) {
+        order: 2;
+      }
+    }
+    @include media-query(tablet, max) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .chefs {
+    .subheading {
+      h4 {
+        color: $color_navajowhite;
+      }
+      p {
+        color: $color_gainsboro;
+      }
+    }
+    .chefs-items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+      width: 90%;
+      margin: 1rem auto;
+      article {
+        padding: 0.5rem;
+        border: 1px solid $color_peru;
+        &:hover {
+          @extend %grid-items-hover;
         }
-	}
-    
-    .story {
-        display: grid;
+        img {
+          width: 50%;
+          min-width: 7rem;
+          border-radius: 50%;
+          margin-top: 1rem;
+        }
+        h5 {
+          text-transform: uppercase;
+          font-size: 1rem;
+          padding-top: 1rem;
+          padding-bottom: 0.3rem;
+          color: $color_navajowhite;
+        }
+        p {
+          width: 80%;
+          font-size: 0.9rem;
+          margin: 0 auto;
+          color: $color_gray;
+        }
+        p.job {
+          font-size: 1rem;
+          color: $color_gainsboro;
+        }
+      }
+      @include media-query(tablet, max) {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 3rem;
-        margin-bottom: 4rem;
-        
-        .story-items {
-			h4 {
-				padding-top: 0.5rem;
-				color: $color_navajowhite;
-			}
-    
-            p {
-                text-align: left;
-				width: 70%;
-				margin: 0 auto;
-				color: $color_gainsboro;
-            }
-        
-            @include media-query(tablet, max) {
-                order: 1;
-                margin-bottom: 1rem;
-            }
-        }
-        
-		.story-img {
-			background: url('../../images/about.jpg');
-			background-size: cover;
-			background-repeat: no-repeat;
-            background-position: center;
-            min-height: 20rem;
+        width: 80%;
+      }
 
-            @include media-query(tablet, max) {
-                order: 2;
-            }
-        }
-        
-        @include media-query(tablet, max) {
-            grid-template-columns: repeat(1, 1fr);
-        }
+      @include media-query(phone-wide, max) {
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+      }
     }
-    
-	.chefs {
-        margin: 1rem 0;
-        
-		h4 {
-			color: $color_navajowhite;
-		}
-        
-        p {
-			color: $color_gainsboro;
-		}
-    }
-    
-	.chefs-items {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-		width: 90%;
-        margin: 1rem auto;
-        
-        article {
-            padding: 1rem;
-            border: 1px solid $color_peru;
-            
-			&:hover {
-				box-shadow: 0 0 1rem 0 navajowhite;
-				border: 1px solid $color_navajowhite;
-				transition: border 0.3s ease-in, box-shadow 0.3s ease-in;
-			}
-            
-            img {
-				width: 50%;
-				border-radius: 50%;
-				margin-top: 1rem;
-				border: 2px solid $color_peru;
-			}
-            
-            h5 {
-                text-transform: uppercase;
-				font-size: 1rem;
-				padding-top: 1rem;
-				padding-bottom: 0.3rem;
-				color: $color_navajowhite;
-            }
-            
-			p {
-				width: 80%;
-				color: $color_gray;
-				font-size: 0.9rem;
-				margin: 0 auto;
-            }
-            
-            p.job {
-                font-size: 1rem;
-                color: $color_gainsboro;
-            }
-        }        
-            
-        @include media-query(tablet, max) {
-            grid-template-columns: repeat(2, 1fr);
-            width: 80%;
-        }
-
-        @include media-query(phone-wide, max) {
-            grid-template-columns: repeat(1, 1fr);
-            width: 70%;
-        }
-	}
+  }
 }
