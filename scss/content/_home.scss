@@ -1,49 +1,59 @@
-.header {
+.banner {
   background-image: url("../../images/background-main.jpg");
   background-size: cover;
   background-position: center;
   margin: 0 auto;
   padding: 5rem;
-  max-width: $website-max-width;
+
   .wrapper {
     width: 30rem;
     padding: 2rem;
     color: $color_white;
     background-color: $background_transparent;
+
     h1 {
       font-size: 2rem;
+      padding-bottom: 0.5rem;
     }
+
     a {
       display: inline-block;
       text-decoration: none;
       font-weight: 700;
       border-radius: 0.3rem;
       border: 2px solid $color_white;
+      margin-top: 0.5rem;
       padding: 0.5rem 0.8rem;
       animation: bounce 0.5s linear infinite;
       color: $color_white;
+
       &:hover {
         @include button-hover($color_black, $background_white);
       }
     }
+
     @include media-query(phablet, max) {
       text-align: center;
       width: 100%;
     }
   }
 }
+
 .home {
   width: 70%;
   max-width: 80rem;
-  margin: 4rem auto 2rem auto;
+  margin: 2rem auto;
+
   h3 {
     text-align: center;
     margin-bottom: 1rem;
   }
+
   blockquote {
     p {
       padding: 0;
     }
+
     p.moto {
       padding-bottom: 0.5rem;
     }

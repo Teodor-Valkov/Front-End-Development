@@ -1,71 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i');
+
 html {
-	font-size: 12px;
-	line-height: 1.5;
-	font-family: 'Lato', 'Helvetica', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: 'Cardo', serif;
 
-	@include media-query(phone-wide) {
-		font-size: 14px;
-	}
+  @include media-query(phone-wide) {
+    font-size: 14px;
+  }
 
-	@include media-query(phablet-wide) {
-		font-size: 16px;
-	}
+  @include media-query(phablet-wide) {
+    font-size: 16px;
+  }
 
-	@include media-query(tablet-wide) {
-		font-size: 18px;
-	}
+  @include media-query(tablet-wide) {
+    font-size: 18px;
+  }
 
-	@include media-query(desktop-wide) {
-		font-size: 20px;
-	}
+  @include media-query(desktop-wide) {
+    font-size: 20px;
+  }
 }
 
-body, table, th, td, form, input, textarea, option, select {
-	font-size: inherit;
-	line-height: inherit;
-	font-family: inherit;
+body,
+table,
+th,
+td,
+form,
+input,
+textarea,
+option,
+select {
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.2em;
-	padding-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+  padding-bottom: 1rem;
 }
 
-$headings: (h1: 3.2em, h2: 2.8em, h3: 2.3em, h4: 1.8em, h5: 1.5em, h6: 1.2em);
+$headings: (
+  h1: 3.2em,
+  h2: 2.8em,
+  h3: 2.3em,
+  h4: 1.8em,
+  h5: 1.5em,
+  h6: 1.2em
+);
 
 @each $heading, $size in $headings {
-	#{$heading} { font-size: $size; }
+  #{$heading} {
+    font-size: $size;
+  }
 }
 
-p, ul, ol {
-	margin: 0;
-	padding-bottom: 1.5rem;
+p,
+ul,
+ol {
+  margin: 0;
+  padding-bottom: 1.5rem;
 }
 
-ul, ol {
-	margin-left: 1.5rem;
+ul,
+ol {
+  margin-left: 1.5rem;
 }
 
 li {
-	list-style-position: inside;
-	list-style: none;
+  list-style-position: inside;
+  list-style: none;
 }
 
 blockquote {
-	width: 50%;
-	font-style: italic;
-	font-family: 'Georgia', serif;
-	border-left: 5px solid gainsboro;
-	margin-left: 5rem;
-	margin-bottom: 1.5rem;
-	padding: 0.3rem 2rem;
-	 
-	.author {
-		text-align: right;
-	}
+  width: 50%;
+  font-style: italic;
+  font-family: 'Old Standard TT', serif;
+  border-left: 5px solid gainsboro;
+  margin-left: 5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.3rem 2rem;
 
-	@include media-query(phablet, max) {
-		width: 80%;
-		margin-left: 3rem;
-	}
+  .author {
+    text-align: right;
+  }
+  
+  @include media-query(phablet, max) {
+    width: 80%;
+    margin-left: 3rem;
+  }
 }

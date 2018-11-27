@@ -1,47 +1,53 @@
 .why-us {
-	background-image: url('../../images/food.jpg');
-    margin: 0 auto;
-	padding: 1rem;
-    max-width: $website-max-width;
-   	.heading {
-        h2 {
-            color: $color_black;
-        }
-        p {
-            color: $color_black;
-        }
-	}
-    .why-us-items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 90%;
-        margin: 0 auto;
-		article {
-			text-align: center;
-			margin: 2rem;        
-            i {
-				font-size: 2.5rem;
-			}        
-            h4 {
-                font-size: 1.5rem;
-				padding-top: 1rem;
-			}        
-            p {
-				font-size: 0.9rem;
-                padding-bottom: 0;
-            }
-            @include media-query(phone-wide, max) {
-                max-width: 80%;
-                margin: 2rem auto;
-            }
-        }
-        
-        @include media-query(tablet, max) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        
-        @include media-query(phone-wide, max) {
-            grid-template-columns: repeat(1, 1fr);
-        }
-	}
+  background-image: url("../../images/food.jpg");
+  margin: 0 auto;
+  padding: 1rem;
+
+  .heading {
+    h2 {
+      color: $color_black;
+    }
+
+    p {
+      color: $color_black;
+    }
+  }
+
+  .why-us-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 2rem auto;
+
+    article {
+      text-align: center;
+      margin: 2rem;
+
+      i {
+        font-size: 2.5rem;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        padding-bottom: 0;
+      }
+
+      @include media-query(phone-wide, max) {
+        max-width: 80%;
+      }
+    }
+
+    @include media-query(tablet, max) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-query(phone-wide, max) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }

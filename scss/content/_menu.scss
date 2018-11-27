@@ -1,43 +1,50 @@
 .menu {
-	background-image: url('../../images/background-black.jpg');
-	background-size: cover;
-	text-align: center;
-    margin: 0 auto;
-	max-width: $website-max-width;    
-	.wrapper {
-		padding: 1rem;
-    }        
-    .menu-items {
-		@extend %display-grid-items;
-		margin-top: 4rem;
-        article {
-			border: 1px solid $color_peru;            
-            a {
-				display: block;
-				text-decoration: none;
-				padding: 1rem;            
-                img {
-					@extend %grid-items-img-circle;
-				}            
-                h4 {
-					text-transform: uppercase;
-					margin: 4rem auto 1rem auto;
-					color: $color_navajowhite;
-				}
-			}            
-            &:hover {
-				@extend %grid-items-hover;
-			}
-        }        
-	
-		@extend %grid-menu-responsive;
-    }    
-	.people {
-		img {
-			width: 100%;
-			opacity: 0.8;
-			margin-top: 2rem;
-			padding: 0;
-		}
-	}
+  background-image: url("../../images/background-black.jpg");
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .menu-items {
+    @extend %display-grid-items;
+    margin-top: 4rem;
+
+    article {
+      border: 1px solid $color_peru;
+
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 1rem;
+
+        img {
+          @extend %grid-items-img-circle;
+        }
+
+        h4 {
+          text-transform: uppercase;
+          margin: 4rem auto 1rem auto;
+          color: $color_navajowhite;
+        }
+      }
+
+      &:hover {
+        @extend %grid-items-hover;
+      }
+    }
+
+    @extend %grid-menu-responsive;
+  }
+
+  .people {
+    img {
+      width: 100%;
+      opacity: 0.8;
+      margin-top: 2rem;
+      padding: 0;
+    }
+  }
 }

@@ -1,15 +1,23 @@
+#site-content {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
 .heading {
-    width: 80%;
-    margin: 2rem auto;
-    h2 {
-        text-align: center;
-        color: $color_navajowhite;
-    }
-    p {
-        width: 80%;
-        text-align: left;
-        margin: 0 auto;
-        padding-bottom: 0;
-        color: $color_gainsboro;
-    }
+  width: 100%;
+  margin: 2rem auto;
+
+  h2 {
+    text-align: center;
+    color: $color_navajowhite;
+    margin: 1rem 1.5rem;
+  }
+
+  p {
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 0;
+    color: $color_gainsboro;
+  }
 }
