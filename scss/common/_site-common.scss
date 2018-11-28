@@ -19,5 +19,9 @@
     margin: 0 auto;
     padding-bottom: 0;
     color: $color_gainsboro;
+
+    @include media-query(phone-wide, max) {
+      width: 80%;
+    }
   }
 }
