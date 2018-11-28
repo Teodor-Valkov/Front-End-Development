@@ -1,8 +1,8 @@
-let controller = (() => {
+let controller = (function() {
   function home() {
     this.loadPartials(
-      getPartials('./pages/content/home.hbs'),
-    )
+      getPartials('./pages/content/home.hbs')
+      )
 
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -11,7 +11,7 @@ let controller = (() => {
 
   function menu() {
     this.loadPartials(
-      getPartials('./pages/content/menu.hbs'),
+      getPartials('./pages/content/menu.hbs')
     )
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -20,7 +20,7 @@ let controller = (() => {
 
   function reserve() {
     this.loadPartials(
-      getPartials('./pages/content/reserve.hbs'),
+      getPartials('./pages/content/reserve.hbs')
     )
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -29,7 +29,7 @@ let controller = (() => {
 
   function whyUs() {
     this.loadPartials(
-      getPartials('./pages/content/why-us.hbs'),
+      getPartials('./pages/content/why-us.hbs')
     )
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -38,7 +38,7 @@ let controller = (() => {
 
   function aboutUs() {
     this.loadPartials(
-      getPartials('./pages/content/about-us.hbs'),
+      getPartials('./pages/content/about-us.hbs')
     )
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -47,7 +47,7 @@ let controller = (() => {
 
   function pizza() {
     this.loadPartials(
-      getPartials('./pages/menu/pizza.hbs'),
+      getPartials('./pages/menu/pizza.hbs')
     )
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -56,7 +56,7 @@ let controller = (() => {
 
   function pastaRisotto() {
     this.loadPartials(
-      getPartials('./pages/menu/pasta-risotto.hbs'),
+      getPartials('./pages/menu/pasta-risotto.hbs')
     )
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -65,7 +65,7 @@ let controller = (() => {
 
   function desserts() {
     this.loadPartials(
-      getPartials('./pages/menu/desserts.hbs'),
+      getPartials('./pages/menu/desserts.hbs')
     )
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -74,7 +74,7 @@ let controller = (() => {
 
   function drinks() {
     this.loadPartials(
-      getPartials('./pages/menu/drinks.hbs'),
+      getPartials('./pages/menu/drinks.hbs')
     )
       .then(function () {
         this.partial('./pages/site.hbs');
@@ -90,14 +90,14 @@ let controller = (() => {
   }
 
   return {
-    home,
-    menu,
-    reserve,
-    whyUs,
-    aboutUs,
-    pizza,
-    pastaRisotto,
-    desserts,
-    drinks
+    home: home,
+    menu: menu,
+    reserve: reserve,
+    whyUs: whyUs,
+    aboutUs: aboutUs,
+    pizza: pizza,
+    pastaRisotto: pastaRisotto,
+    desserts: desserts,
+    drinks: drinks
   };
 })()

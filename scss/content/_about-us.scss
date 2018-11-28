@@ -89,10 +89,7 @@
         }
 
         img {
-          width: 50%;
-          min-width: 7rem;
-          border-radius: 50%;
-          margin-top: 1rem;
+          @include grid-items-img-circle(8rem, 8rem);
         }
 
         h5 {

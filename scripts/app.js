@@ -1,4 +1,4 @@
-$(() => {
+$(function() {
   const app = Sammy('#site-content', function () {
     this.use('Handlebars', 'hbs');
 

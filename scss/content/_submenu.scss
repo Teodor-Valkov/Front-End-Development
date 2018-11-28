@@ -35,7 +35,7 @@
     }
 
     img {
-      @extend %grid-items-img-circle;
+      @include grid-items-img-circle(10rem, 10rem);    
     }
 
     h3 {
