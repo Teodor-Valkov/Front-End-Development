@@ -92,8 +92,12 @@
           @extend %grid-items-hover;
         }
 
-        img {
-          @include grid-items-img-circle(8rem, 8rem);
+        .circle {
+          @include grid-items-circle-for-img(8rem, 8rem);
+
+          img {            
+            @extend %grid-items-circle-img;
+          }
         }
 
         h5 {

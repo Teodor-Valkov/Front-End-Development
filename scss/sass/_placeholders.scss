@@ -12,6 +12,12 @@
   transition: border 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 
+%grid-items-circle-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 %grid-menu-responsive {
   @include media-query(desktop, max) {
     grid-template-columns: repeat(2, 1fr);

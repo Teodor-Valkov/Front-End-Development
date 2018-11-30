@@ -34,8 +34,12 @@
       @extend %grid-items-hover;
     }
 
-    img {
-      @include grid-items-img-circle(10rem, 10rem);    
+    .circle {
+      @include grid-items-circle-for-img(10rem, 10rem);
+
+      img {
+        @extend %grid-items-circle-img;
+      }
     }
 
     h3 {

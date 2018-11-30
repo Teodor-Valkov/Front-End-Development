@@ -19,9 +19,10 @@
   }
 }
 
-@mixin grid-items-img-circle($width, $height) {
+@mixin grid-items-circle-for-img($width, $height) {
   width: $width;
   height: $height;
   border-radius: 50%;
-  margin-top: 2rem;
+  overflow: hidden;
+  margin: 2rem auto;
 }
